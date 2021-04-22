@@ -2,17 +2,18 @@
   padding: 10vh;
   background-color: #f9cf98;
   min-height: 45vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title {
   font-size: 8em;
   font-weight: 900;
-  text-align: center;
   margin-top: 20vh;
 }
 
 .paragraph {
-  text-align: center;
   margin-top: 10px;
   font-size: 2em;
   color: #111111;
@@ -20,8 +21,6 @@
 
 .blob {
   position: absolute;
-  left: auto;
-  right: auto;
 }
 
 @media screen and (max-width: 920px) {

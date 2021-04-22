@@ -1,0 +1,16 @@
+.card__container {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+.card {
+  background: #faf5f1;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  object-fit: cover;
+}
