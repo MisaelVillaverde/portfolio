@@ -1,109 +1,135 @@
 .title-bar__container {
   position: relative;
-  background-color: #f9cf98;
+  background-color: #860b0c;
   overflow: hidden;
-  padding-bottom: 10vh;
+  height: 50vw;
+}
+
+.blob {
+  position: absolute;
+  overflow: visible;
+  transform: scale(4);
+  top: 99rem;
+  left: 5rem;
+}
+
+.blob > mask {
+  transform-origin: center;
+}
+
+.mask-blob {
+  transform-origin: center;
+  animation: moveBlob 15s linear infinite;
 }
 
 .title-bar__title {
   display: flex;
   width: 90vw;
-  align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding-bottom: 20px;
   margin: 0 auto;
 }
 
-.title {
-  font-size: 8em;
-  font-weight: 900;
-  margin-top: 20vh;
+h1.title {
+  font-size: 10vw;
+  font-weight: bold;
+  font-family: 'Zilla Slab Highlight', cursive;
+
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
+    3px 3px 0 #000;
+  margin-top: 10vw;
   text-align: center;
   z-index: 1;
+  color: #ffbdbd;
 }
 
-.paragraph {
-  margin-top: 10px;
-  font-size: 2em;
-  color: #111111;
+h2.paragraph {
+  margin-top: 10vw;
+  font-size: 3vw;
+  font-weight: bold;
+  font-family: 'Zilla Slab Highlight', cursive;
+  text-align: center;
+  color: #fff;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
   z-index: 1;
-}
-
-.blob__container {
-  position: relative;
-}
-
-.blob {
-  position: absolute;
-}
-
-#blob {
-  animation: move 10s linear infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-.target-clip {
-  clip-path: url(#blob);
-  position: absolute;
 }
 
 @media screen and (max-width: 768px) {
-  .title {
-    font-size: 4em;
+  .title-bar__container {
+    height: 80vw;
   }
-  .paragraph {
-    font-size: 1.5em;
+  h1.title {
+    font-size: 14vw;
+    text-align: left;
+    margin-top: 20vw;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+      2px 2px 0 #000;
   }
-  .title-bar__title {
-    align-items: default;
+  h2.paragraph {
+    font-size: 5vw;
+    text-align: left;
   }
-  #blob {
-    animation: move768 30s linear infinite;
+
+  .blob {
+    position: absolute;
+    overflow: visible;
+    transform: scale(1.3);
+    top: 13rem;
+    left: 1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .title {
-    font-size: 2.5em;
+  h1.title {
+    text-align: left;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
-  #blob {
-    animation: move574 30s linear infinite;
+  .mask-blob {
+    animation: moveBlob480 15s linear infinite;
   }
-}
-
-@keyframes move {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  50% {
-    transform: scale(1.3) rotate(180deg);
-  }
-  100% {
-    transform: scale(1) rotate(360deg);
+  .blob {
+    position: absolute;
+    overflow: visible;
+    transform: scale(1.3);
+    top: 13rem;
+    left: 1rem;
   }
 }
 
-@keyframes move768 {
+@keyframes moveBlob {
   0% {
-    transform: scale(0.6) rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
-    transform: scale(0.9) rotate(180deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: scale(0.6) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-@keyframes move574 {
+@keyframes moveBlob768 {
   0% {
-    transform: scale(0.5) rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
-    transform: scale(0.8) rotate(180deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: scale(0.5) rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveBlob480 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
