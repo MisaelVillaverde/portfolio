@@ -1,11 +1,11 @@
-import './App.css';
+import './App.scss';
+import Hero from './components/Hero';
 // import Card from './components/Card';
-import TitleBar from './components/TitleBar';
 
 function App() {
   return (
     <>
-      <TitleBar />
+      <Hero />
       {/* <Card title='Amazon Clone.' /> */}
     </>
   );
