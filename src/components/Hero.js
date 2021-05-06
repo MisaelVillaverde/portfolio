@@ -13,6 +13,7 @@ const Hero = () => {
   return (
     <div className='hero__container'>
       <a
+        ref="noreferrer"
         className='title__container'
         href='https://www.linkedin.com/in/misael-villaverde/'
         target='_blank'

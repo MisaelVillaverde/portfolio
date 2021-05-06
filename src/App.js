@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Hero />
-      {/* <Card title='Amazon Clone.' /> */}
+      {/* Content */}
     </>
   );
 }
