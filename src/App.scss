@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $padding: 3rem;
-$primary-color: #000;
+$primary-color: #ffb2b2;
+$secondary-color: #141640;
+$red: #BF264F;
+$purple: #5F1673;
+$magenta: #AD0CF2;
+$mustard: #F29727;
 
 // Breakpoints
 
 $bp-768: 768px;
+$bp-480: 480px;
 
 * {
   margin: 0;
@@ -18,6 +24,3 @@ html {
   font-size: 62.5%; /* 1rem = 10px */
 }
 
-body {
-  overflow-x: hidden;
-}

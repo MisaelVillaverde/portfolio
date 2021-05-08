@@ -1,0 +1,24 @@
+@import '../App.scss';
+
+ul.skills__container {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 100%;
+  color: $primary-color;
+  li {
+    i {
+      font-size: 7rem;
+      transition: color 0.2s ease-in-out;
+    }
+    i.fa-js:hover {
+      color: #f4d747;
+    }
+    i.fa-sass:hover {
+      color: #ffa8f8;
+    }
+    i.fa-react:hover {
+      color: #00d2f3;
+    }
+  }
+}
