@@ -1,18 +1,24 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import "./Skills.scss";
 
 const Skills = () => {
   return (
     <ul className="skills__container">
       <li>
-        <i class="fab fa-js"></i>
+        <i className="fab fa-js"></i>
       </li>
       <li>
-        <i class="fab fa-sass"></i>
+        <i className="fab fa-sass"></i>
       </li>
-      <li>
-        <i class="fab fa-react"></i>
-      </li>
+      <motion.li
+        whileHover={{
+          rotate: 90,
+        }}
+      >
+        <i className="fab fa-react"></i>
+      </motion.li>
     </ul>
   );
 };

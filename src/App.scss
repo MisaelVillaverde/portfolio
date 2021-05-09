@@ -2,14 +2,12 @@
 
 $padding: 3rem;
 $primary-color: #ffb2b2;
-$secondary-color: #141640;
-$red: #BF264F;
-$purple: #5F1673;
-$magenta: #AD0CF2;
+$secondary-color: #400d32;
 $mustard: #F29727;
 
 // Breakpoints
 
+$bp-1024: 1024px;
 $bp-768: 768px;
 $bp-480: 480px;
 
@@ -20,7 +18,17 @@ $bp-480: 480px;
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  // doted background
+  background-image: radial-gradient(black 1px, transparent 0);
+  background-size: 40px 40px;
+  background-color: $primary-color;
+}
+
 html {
   font-size: 62.5%; /* 1rem = 10px */
 }
 
+::selection {
+  background: $mustard;
+}

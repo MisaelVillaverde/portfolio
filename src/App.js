@@ -1,12 +1,14 @@
 import './App.scss';
+import Content from './components/Content';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
-// import Card from './components/Card';
 
 function App() {
   return (
     <>
       <Hero />
-      {/* Content */}
+      <Content />
+      <Footer />
     </>
   );
 }
