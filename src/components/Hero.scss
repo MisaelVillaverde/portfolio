@@ -7,8 +7,7 @@
   align-items: center;
   justify-content: space-evenly;
   background-image: url("../assets/img/hero.jpg");
-  background-position: center;
-  background-attachment: fixed;
+  background-position: 10% 70%;
 
   .ts__container {
     display: flex;
@@ -54,7 +53,7 @@
         }
       }
       a.gh:hover {
-        color: black;
+        color: #fff;
       }
       a.linkedin:hover {
         color: #0064b7;
@@ -123,7 +122,9 @@
 @media (max-width: $bp-480) {
   .hero__container {
     border: none;
+    height: 88vh;
     .ts__container {
+      margin-top: 3vh;
       .title__container {
         border: none;
         cursor: default;

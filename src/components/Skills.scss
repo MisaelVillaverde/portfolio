@@ -1,7 +1,9 @@
-@import '../App.scss';
+@import "../App.scss";
 
 ul.skills__container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   list-style: none;
   justify-content: space-evenly;
   width: 100%;
@@ -11,14 +13,41 @@ ul.skills__container {
       font-size: 7rem;
       transition: color 0.2s ease-in-out;
     }
-    i.fa-js:hover {
+    i.fa-js {
       color: #f4d747;
+      transition: transform 0.1s ease-out;
     }
-    i.fa-sass:hover {
-      color: #ffa8f8;
+    i.fa-sass {
+      color: #de6399;
+      transition: transform 0.4s;
     }
-    i.fa-react:hover {
+    i.fa-react {
       color: #00d2f3;
+      animation: spin 10s linear infinite;
+    }
+    svg {
+      transition: transform 0.1s;
+    }
+  }
+  li:hover {
+    i.fa-js {
+      transform: rotate(-10deg) scale(1.2);
+    }
+    i.fa-sass {
+      transform: rotateY(360deg);
+    }
+    svg {
+      transform: rotate(-10deg) scale(1.2);
     }
   }
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
