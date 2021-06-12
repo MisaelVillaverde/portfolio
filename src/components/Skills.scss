@@ -1,4 +1,4 @@
-@import "../App.scss";
+@import '../App.scss';
 
 ul.skills__container {
   display: flex;
@@ -17,27 +17,27 @@ ul.skills__container {
       color: #f4d747;
       transition: transform 0.1s ease-out;
     }
-    i.fa-sass {
-      color: #de6399;
-      transition: transform 0.4s;
-    }
     i.fa-react {
       color: #00d2f3;
       animation: spin 10s linear infinite;
     }
-    svg {
+    i.fa-node {
+      color: rgb(101, 185, 101);
       transition: transform 0.1s;
+    }
+    img {
+      transition: transform 0.6s;
     }
   }
   li:hover {
     i.fa-js {
       transform: rotate(-10deg) scale(1.2);
     }
-    i.fa-sass {
-      transform: rotateY(360deg);
-    }
-    svg {
+    i.fa-node {
       transform: rotate(-10deg) scale(1.2);
+    }
+    img {
+      transform: rotateY(360deg);
     }
   }
 }
@@ -50,4 +50,3 @@ ul.skills__container {
     transform: rotate(360deg);
   }
 }
-
