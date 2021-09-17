@@ -2,7 +2,7 @@
 
 $padding: 3rem;
 $primary-color: #ffb2b2;
-$mustard: #f29727;
+$mustard: #fffeee;
 
 // Breakpoints
 
@@ -23,7 +23,7 @@ html {
 
 body {
   // Doted background
-  background-image: radial-gradient(black 2px, transparent 0);
+  // background-image: radial-gradient($primary-color 2px, transparent 0);
   background-size: 40px 40px;
   background-color: $primary-color;
 }

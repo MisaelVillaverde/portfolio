@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.scss';
-import Skills from './Skills';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -27,9 +26,9 @@ const Hero = () => {
           }}
         >
           <h1>
-            Hi, I'm <br /> <b>Misael Villaverde</b>
+            Hi, I'm <br /> <div class='name__title'>Misael Villaverde</div>
           </h1>
-          <h2>FullStack Web Developer</h2>
+          <h2>FullStack Web Developer at <a href='https://www.hypernovalabs.com' class='hypernova' target='_blank' rel='noreferrer'>HypernovaLabs</a> 🚀</h2>
         </motion.div>
         <div className='social__container'>
           <a
@@ -58,7 +57,6 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <Skills />
       <div className='scroll' onClick={handleScroll}>
         <span>Portfolio</span>
         <motion.i
@@ -67,7 +65,7 @@ const Hero = () => {
           }}
           transition={{
             repeat: Infinity,
-            duration: 0.5,
+            duration: 1,
             ease: 'easeInOut',
             repeatType: 'reverse',
           }}
