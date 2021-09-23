@@ -28,7 +28,7 @@ const Hero = () => {
           <h1>
             Hi, I'm <br /> <div class='name__title'>Misael Villaverde</div>
           </h1>
-          <h2>FullStack Web Developer at <a href='https://www.hypernovalabs.com' class='hypernova' target='_blank' rel='noreferrer'>HypernovaLabs</a> 🚀</h2>
+          <h2>FullStack Software Dev at <a href='https://www.hypernovalabs.com' class='hypernova' target='_blank' rel='noreferrer'>HypernovaLabs</a> 🚀</h2>
         </motion.div>
         <div className='social__container'>
           <a
